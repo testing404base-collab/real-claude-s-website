@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Property360 Nepal</title>
+<meta name="description" content="Property360 Nepal opened in Gairidhara, Kathmandu in 2017 to make buying, selling, renting and managing property in the valley approachable. Read our story.">
+<meta name="keywords" content="Property360 Nepal about, Kathmandu real estate company, real estate consultancy Nepal, property360 story">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://property360nepal.com/about.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Property360 Nepal">
+<meta property="og:title" content="About Property360 Nepal | Your Realtor For Life">
+<meta property="og:description" content="A Kathmandu real estate consultancy built on trust, transparency and reliability since 2017.">
+<meta property="og:url" content="https://property360nepal.com/about.html">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About Property360 Nepal">
+<meta name="twitter:description" content="Our story, our values and how our realtor network works — Kathmandu, since 2017.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Property360 Nepal",
+  "url": "https://property360nepal.com/about.html",
+  "mainEntity": {
+    "@type": "RealEstateAgent",
+    "name": "Property360 Nepal",
+    "foundingDate": "2017",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Naagpokhari Marg, Gairidhara",
+      "addressLocality": "Kathmandu",
+      "addressCountry": "NP"
+    }
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,560;9..144,650&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#1c1a17; --paper:#f1ece1; --paper-2:#e7ddc9;
+    --brick:#a8442e; --brick-dark:#832f1e; --brass:#b68a3d; --pine:#3f5443; --slate:#6b6558;
+    --line: rgba(28,26,23,0.14); --radius:2px; --maxw:1180px; --ease:cubic-bezier(.22,.85,.32,1);
+  }
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:'Inter',system-ui,sans-serif; font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  img,svg{ display:block; max-width:100%; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; margin:0; padding:0; }
+  h1,h2,h3,h4{ font-family:'Fraunces',serif; font-weight:560; margin:0; line-height:1.08; letter-spacing:-0.01em; }
+  p{ margin:0; }
+  .mono{ font-family:'Space Mono',monospace; }
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 32px; }
+
+  .skip-link{ position:absolute; left:-999px; top:0; background:var(--ink); color:var(--paper); padding:12px 18px; z-index:200; font-family:'Space Mono',monospace; font-size:13px; }
+  .skip-link:focus{ left:16px; top:16px; }
+  :focus-visible{ outline:2px solid var(--brick); outline-offset:3px; }
+
+  .scroll-progress{ position:fixed; top:0; left:0; height:3px; width:0%; z-index:150; background:linear-gradient(90deg,var(--brick),var(--brass)); transition:width .1s linear; }
+
+  /* ---------- header (shared) ---------- */
+  header{ position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(241,236,225,0); border-bottom:1px solid transparent; transition:background .4s var(--ease), border-color .4s var(--ease), padding .3s var(--ease); padding:26px 0; }
+  header.scrolled{ background:rgba(241,236,225,.92); backdrop-filter:blur(10px); border-color:var(--line); padding:14px 0; }
+  .nav-row{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif; font-weight:650; font-size:1.15rem; }
+  .brand .mark{ width:30px; height:30px; flex:none; }
+  .brand .mark svg{ width:100%; height:100%; }
+  .brand .three60{ color:var(--brick); }
+  nav.primary{ display:flex; align-items:center; gap:34px; }
+  nav.primary a{ font-size:.86rem; letter-spacing:.03em; text-transform:uppercase; font-weight:600; position:relative; padding:4px 0; color:var(--ink); }
+  nav.primary a::after{ content:''; position:absolute; left:0; bottom:-2px; width:0; height:1.5px; background:var(--brick); transition:width .35s var(--ease); }
+  nav.primary a:hover::after, nav.primary a:focus-visible::after, nav.primary a[aria-current="page"]::after{ width:100%; }
+  nav.primary a[aria-current="page"]{ color:var(--brick); }
+  .header-actions{ display:flex; align-items:center; gap:18px; }
+  .phone-chip{ display:flex; align-items:center; gap:8px; font-family:'Space Mono',monospace; font-size:.82rem; }
+  .btn{ display:inline-flex; align-items:center; gap:8px; padding:12px 22px; font-size:.82rem; letter-spacing:.03em; text-transform:uppercase; font-weight:700; border-radius:var(--radius); border:1px solid var(--ink); transition:transform .3s var(--ease), background .3s var(--ease), color .3s var(--ease), box-shadow .3s var(--ease); cursor:pointer; white-space:nowrap; }
+  .btn-solid{ background:var(--ink); color:var(--paper); }
+  .btn-solid:hover{ background:var(--brick); border-color:var(--brick); transform:translateY(-2px); box-shadow:0 10px 22px -10px rgba(168,68,46,.55); }
+  .btn-outline{ background:transparent; color:var(--ink); }
+  .btn-outline:hover{ background:var(--ink); color:var(--paper); transform:translateY(-2px); }
+  .nav-toggle{ display:none; }
+
+  @media (max-width:720px){
+    nav.primary, .header-actions .phone-chip{ display:none; }
+    .nav-toggle{ display:flex; align-items:center; justify-content:center; width:40px; height:40px; border:1px solid var(--ink); background:none; cursor:pointer; }
+    .nav-toggle svg{ width:18px; height:18px; }
+    .wrap{ padding:0 20px; }
+    body.nav-open .mobile-menu{ transform:translateY(0); opacity:1; pointer-events:auto; }
+    .mobile-menu{ position:fixed; inset:0; top:0; background:var(--paper); z-index:99; padding:110px 28px 40px; transform:translateY(-8px); opacity:0; pointer-events:none; transition:all .35s var(--ease); display:flex; flex-direction:column; gap:26px; }
+    .mobile-menu a{ font-family:'Fraunces',serif; font-size:1.6rem; }
+  }
+  @media (min-width:721px){ .mobile-menu{ display:none; } }
+
+  /* ---------- reveal system (shared) ---------- */
+  .reveal-up{ opacity:0; transform:translateY(30px); transition:opacity .9s var(--ease), transform .9s var(--ease); }
+  .reveal-up.is-visible{ opacity:1; transform:translateY(0); }
+  .reveal-left{ opacity:0; transform:translateX(-36px); transition:opacity .85s var(--ease), transform .85s var(--ease); }
+  .reveal-left.is-visible{ opacity:1; transform:translateX(0); }
+  .reveal-right{ opacity:0; transform:translateX(36px); transition:opacity .85s var(--ease), transform .85s var(--ease); }
+  .reveal-right.is-visible{ opacity:1; transform:translateX(0); }
+  .reveal-mask{ overflow:hidden; }
+  .reveal-mask > *{ opacity:0; transform:translateY(115%); clip-path:inset(0 0 -20% 0); transition:opacity .1s linear, transform 1s var(--ease); }
+  .reveal-mask.is-visible > *{ opacity:1; transform:translateY(0); }
+  .reveal-mask.is-visible > *:nth-child(1){ transition-delay:.02s; }
+  .reveal-mask.is-visible > *:nth-child(2){ transition-delay:.11s; }
+  .reveal-mask.is-visible > *:nth-child(3){ transition-delay:.2s; }
+  .stagger > *{ opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+  .stagger.is-visible > *{ opacity:1; transform:translateY(0); }
+  .stagger.is-visible > *:nth-child(1){ transition-delay:.03s; }
+  .stagger.is-visible > *:nth-child(2){ transition-delay:.13s; }
+  .stagger.is-visible > *:nth-child(3){ transition-delay:.23s; }
+  .stagger.is-visible > *:nth-child(4){ transition-delay:.33s; }
+
+  .eyebrow{ font-family:'Space Mono',monospace; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; color:var(--brick); display:flex; align-items:center; gap:10px; margin-bottom:20px; }
+  .eyebrow::before{ content:''; width:26px; height:1px; background:var(--brick); }
+
+  section{ padding:110px 0; position:relative; }
+  .section-alt{ background:var(--paper-2); }
+  .section-dark{ background:var(--ink); color:var(--paper); }
+  .section-dark .eyebrow{ color:var(--brass); }
+  .section-dark .eyebrow::before{ background:var(--brass); }
+
+  /* ---------- about hero ---------- */
+  .about-hero{ padding:184px 0 90px; border-bottom:1px solid var(--line); position:relative; overflow:hidden; }
+  .about-hero-inner{ max-width:820px; }
+  .about-hero h1{ font-size:clamp(2.7rem,6vw,4.6rem); }
+  .about-hero h1 em{ font-style:italic; color:var(--brick); font-weight:450; }
+  .about-hero-sub{ margin-top:28px; max-width:56ch; font-size:1.12rem; color:var(--slate); }
+  .about-hero-bg{ position:absolute; top:-10%; right:-8%; width:60%; height:130%; opacity:.55; pointer-events:none; z-index:-1; color:var(--brick); }
+  .about-hero-bg svg{ width:100%; height:100%; }
+  .back-link{ display:inline-flex; align-items:center; gap:8px; font-family:'Space Mono',monospace; font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; margin-bottom:34px; color:var(--slate); transition:color .3s var(--ease), gap .3s var(--ease); }
+  .back-link:hover{ color:var(--brick); gap:12px; }
+  .back-link svg{ width:14px; height:14px; }
+
+  /* ---------- story ---------- */
+  .story-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:70px; align-items:start; }
+  .story-lede{ font-family:'Fraunces',serif; font-size:1.7rem; font-weight:450; line-height:1.4; position:sticky; top:130px; }
+  .story-lede em{ color:var(--brick); font-style:italic; }
+  .story-body p{ font-size:1.03rem; color:var(--slate); }
+  .story-body p + p{ margin-top:20px; }
+
+  /* ---------- pull quote ---------- */
+  .pull-quote{ padding:130px 0; text-align:center; }
+  .pull-quote blockquote{ max-width:800px; margin:0 auto; font-family:'Fraunces',serif; font-size:clamp(1.6rem,3.4vw,2.6rem); font-weight:450; line-height:1.35; }
+  .pull-quote .q-mark{ display:block; font-size:3.4rem; color:var(--brick); line-height:1; margin-bottom:8px; }
+  .pull-quote cite{ display:block; margin-top:28px; font-style:normal; font-family:'Space Mono',monospace; font-size:.8rem; text-transform:uppercase; letter-spacing:.06em; color:var(--slate); }
+
+  /* ---------- values panels ---------- */
+  .values-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
+  .value-panel{ background:var(--paper); padding:44px 34px; transition:transform .5s var(--ease), background .4s var(--ease), box-shadow .4s var(--ease); transform-style:preserve-3d; }
+  .value-panel:hover{ background:var(--paper-2); box-shadow:0 26px 50px -26px rgba(28,26,23,.35); }
+  .value-panel .v-index{ font-family:'Space Mono',monospace; font-size:.8rem; color:var(--brick); }
+  .value-panel h3{ margin-top:20px; font-size:1.5rem; }
+  .value-panel p{ margin-top:14px; color:var(--slate); font-size:.95rem; }
+  .value-panel .v-icon{ width:36px; height:36px; color:var(--brick); margin-top:22px; transition:transform .4s var(--ease); }
+  .value-panel:hover .v-icon{ transform:rotate(12deg) scale(1.1); }
+
+  /* ---------- stats ---------- */
+  .stats-band{ display:grid; grid-template-columns:repeat(4,1fr); gap:40px; }
+  .stat-block{ border-top:1px solid rgba(241,236,225,.22); padding-top:22px; }
+  .stat-block .stat-num{ font-family:'Fraunces',serif; font-size:3rem; font-weight:560; color:var(--brass); }
+  .stat-block .stat-label{ margin-top:8px; font-family:'Space Mono',monospace; font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; color:#c9c2b3; max-width:18ch; }
+
+  /* ---------- network ---------- */
+  .network-grid{ display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
+  .network-copy .lede{ font-family:'Fraunces',serif; font-size:1.5rem; font-weight:450; line-height:1.4; }
+  .network-copy p.body{ margin-top:20px; color:var(--slate); }
+  .network-figure{ position:relative; border:1px solid var(--line); aspect-ratio:5/4; border-radius:2px; overflow:hidden; background:var(--paper); }
+  .network-figure svg{ width:100%; height:100%; }
+
+  /* ---------- closing CTA ---------- */
+  .closing-cta{ text-align:center; padding:130px 0; }
+  .closing-cta h2{ font-size:clamp(2.1rem,4vw,3.2rem); max-width:16ch; margin:0 auto; }
+  .closing-cta-actions{ display:flex; gap:16px; justify-content:center; margin-top:36px; flex-wrap:wrap; }
+
+  /* ---------- footer (shared) ---------- */
+  footer{ background:var(--ink); color:var(--paper); padding:64px 0 28px; }
+  .footer-top{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:48px; border-bottom:1px solid rgba(241,236,225,.15); }
+  .footer-brand .brand{ color:var(--paper); }
+  .footer-brand p{ margin-top:16px; color:#c9c2b3; max-width:32ch; font-size:.92rem; }
+  .footer-col h4{ font-family:'Space Mono',monospace; font-size:.74rem; text-transform:uppercase; letter-spacing:.06em; color:var(--brass); font-weight:400; }
+  .footer-col ul{ margin-top:18px; display:grid; gap:12px; }
+  .footer-col a{ color:#d8d2c4; font-size:.92rem; transition:color .25s var(--ease); }
+  .footer-col a:hover{ color:var(--brass); }
+  .footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top:24px; flex-wrap:wrap; gap:12px; }
+  .footer-bottom span{ font-family:'Space Mono',monospace; font-size:.74rem; color:#928c7d; }
+
+  @media (max-width:980px){
+    .story-grid, .network-grid{ grid-template-columns:1fr; }
+    .story-lede{ position:static; }
+    .values-grid{ grid-template-columns:1fr; }
+    .stats-band{ grid-template-columns:repeat(2,1fr); row-gap:36px; }
+    .footer-top{ grid-template-columns:1fr 1fr; row-gap:36px; }
+  }
+  @media (max-width:720px){
+    .about-hero{ padding:150px 0 60px; }
+    section{ padding:76px 0; }
+    .pull-quote{ padding:80px 0; }
+    .stats-band{ grid-template-columns:1fr 1fr; }
+    .footer-top{ grid-template-columns:1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.001ms !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="jaliBig" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M23 0 L46 23 L23 46 L0 23 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      <circle cx="23" cy="23" r="5.5" fill="none" stroke="currentColor" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header id="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand" aria-label="Property360 Nepal home">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="38" height="38" fill="#a8442e"/>
+          <path d="M20 3 L37 20 L20 37 L3 20 Z" fill="none" stroke="#f1ece1" stroke-width="1.4"/>
+          <circle cx="20" cy="20" r="6" fill="none" stroke="#f1ece1" stroke-width="1.4"/>
+        </svg>
+      </span>
+      Property<span class="three60">360</span> Nepal
+    </a>
+
+    <nav class="primary" aria-label="Primary">
+      <a href="about.html" aria-current="page">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#listings">Listings</a>
+      <a href="index.html#process">Process</a>
+      <a href="index.html#testimonials">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <span class="phone-chip"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 01-4004709</span>
+      <a href="index.html#contact" class="btn btn-solid">Talk to an agent</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">About</a>
+  <a href="index.html#services">Services</a>
+  <a href="index.html#listings">Listings</a>
+  <a href="index.html#process">Process</a>
+  <a href="index.html#testimonials">Reviews</a>
+  <a href="index.html#contact">Contact</a>
+</div>
+
+<main id="main">
+
+  <!-- ABOUT HERO -->
+  <section class="about-hero">
+    <div class="about-hero-bg" aria-hidden="true">
+      <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="600" fill="url(#jaliBig)"/></svg>
+    </div>
+    <div class="wrap about-hero-inner">
+      <a href="index.html" class="back-link reveal-up">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to home
+      </a>
+      <div class="reveal-mask">
+        <p class="eyebrow">Our Story</p>
+        <h1>Built to make property<br>feel <em>approachable</em>.</h1>
+        <p class="about-hero-sub">Property360 Nepal opened its doors in Gairidhara, Kathmandu in 2017 — with one idea: buying, selling, renting or managing property in the valley shouldn't require an insider's address book.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section>
+    <div class="wrap story-grid">
+      <div class="story-lede reveal-left">
+        <p>We started as a small team with one advantage: <em>we knew the market's blind spots.</em></p>
+      </div>
+      <div class="story-body reveal-up">
+        <p>Kathmandu's property world has long run on relationships — a friend who knew a friend, a broker who never wrote anything down. Property360 Nepal set out to put a proper consultancy in that gap: real agents, a wide network of realtors across the valley, and a process that doesn't depend on knowing the right person.</p>
+        <p>We work as matchmakers between the people who own space and the people who need it — evaluating what both sides actually require, rather than pushing whatever's easiest to close.</p>
+        <p>Alongside the on-the-ground work, we run a digital-first marketing engine — social media, targeted Google campaigns and content — so every listing reaches genuine buyers and tenants, not just foot traffic. Since 2017, that's meant showing up on both sides of a deal: for the family selling their first plot of land, and the tenant trying to find an apartment without paying a broker under the table.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PULL QUOTE -->
+  <section class="section-alt pull-quote">
+    <div class="wrap">
+      <div class="reveal-mask" style="display:flex; flex-direction:column; align-items:center;">
+        <span class="q-mark" aria-hidden="true">&ldquo;</span>
+        <blockquote>Trust, transparency and reliability aren't a tagline for us — they're the only way a repeat-referral business survives.</blockquote>
+        <cite>— Property360 Nepal</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section>
+    <div class="wrap">
+      <div class="reveal-mask" style="margin-bottom:56px; max-width:640px;">
+        <p class="eyebrow">What Guides Us</p>
+        <h2 style="font-size:clamp(2rem,3.6vw,2.8rem);">Three words we get held to</h2>
+      </div>
+      <div class="values-grid stagger">
+        <article class="value-panel">
+          <span class="v-index mono">01</span>
+          <svg class="v-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"/></svg>
+          <h3>Trust</h3>
+          <p>Every listing we put in front of you has been checked — ownership, title, condition — before it ever reaches you.</p>
+        </article>
+        <article class="value-panel">
+          <span class="v-index mono">02</span>
+          <svg class="v-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/></svg>
+          <h3>Transparency</h3>
+          <p>Fees, timelines and terms are laid out up front — no hidden steps appearing between an offer and a signature.</p>
+        </article>
+        <article class="value-panel">
+          <span class="v-index mono">03</span>
+          <svg class="v-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <h3>Reliability</h3>
+          <p>We stay reachable after the deal closes — for the questions that only come up once you've actually moved in.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-dark">
+    <div class="wrap">
+      <div class="reveal-mask" style="margin-bottom:56px; max-width:640px;">
+        <p class="eyebrow">By The Numbers</p>
+        <h2 style="font-size:clamp(2rem,3.6vw,2.8rem);">Small team, valley-wide reach</h2>
+      </div>
+      <div class="stats-band stagger">
+        <div class="stat-block">
+          <div class="stat-num"><span data-count="2017" data-format="plain">0</span></div>
+          <div class="stat-label">Year we opened our doors in Gairidhara</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num"><span data-count="9">0</span>+</div>
+          <div class="stat-label">Years active in the Kathmandu property market</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num"><span data-count="16">0</span>K+</div>
+          <div class="stat-label">People following our listings &amp; updates</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num"><span data-count="6">0</span></div>
+          <div class="stat-label">Core services under one consultancy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NETWORK -->
+  <section class="section-alt">
+    <div class="wrap network-grid">
+      <div class="network-copy reveal-left">
+        <p class="eyebrow">Our Network</p>
+        <p class="lede">A small in-house team, backed by a valley-wide network of realtors.</p>
+        <p class="body">Every transaction is handled directly by one of our own agents — but every search draws on a much wider circle of realtors across Kathmandu. That network is how a property that isn't on our books still finds its way to the right buyer, and how a listing we take on reaches beyond our own client list within days.</p>
+      </div>
+      <div class="network-figure reveal-right" aria-hidden="true">
+        <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="320" fill="#e7ddc9"/>
+          <rect width="400" height="320" fill="url(#jaliBig)" color="#a8442e" opacity="0.5"/>
+          <circle cx="200" cy="160" r="46" fill="#a8442e"/>
+          <text x="200" y="166" text-anchor="middle" font-family="Space Mono, monospace" font-size="13" fill="#f1ece1">P360</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section class="closing-cta">
+    <div class="wrap">
+      <div class="reveal-mask" style="display:flex; flex-direction:column; align-items:center;">
+        <p class="eyebrow">Let's Talk</p>
+        <h2>Ready to make your move in Kathmandu?</h2>
+      </div>
+      <div class="closing-cta-actions reveal-up">
+        <a href="index.html#contact" class="btn btn-solid">Book a consultation</a>
+        <a href="index.html#listings" class="btn btn-outline">See property types</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" aria-label="Property360 Nepal home">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="38" height="38" fill="#a8442e"/>
+              <path d="M20 3 L37 20 L20 37 L3 20 Z" fill="none" stroke="#f1ece1" stroke-width="1.4"/>
+            </svg>
+          </span>
+          Property<span class="three60">360</span> Nepal
+        </a>
+        <p>Kathmandu's 360° real estate consultancy — buying, selling, renting, leasing and managing property since 2017.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#listings">Listings</a></li>
+          <li><a href="index.html#process">Process</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Buying &amp; selling</a></li>
+          <li><a href="index.html#services">Rental &amp; leasing</a></li>
+          <li><a href="index.html#services">Property management</a></li>
+          <li><a href="index.html#services">Legal advice</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:0014004709">01-4004709</a></li>
+          <li><a href="tel:9779802601115">980-2601115</a></li>
+          <li>Naagpokhari Marg, Gairidhara, Kathmandu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Property360 Nepal. All rights reserved.</span>
+      <span>Trust · Transparency · Reliability</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('site-header');
+  const onScroll = () => { header.classList.toggle('scrolled', window.scrollY > 24); };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive:true });
+
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  navToggle.addEventListener('click', () => {
+    const isOpen = document.body.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  const progressBar = document.getElementById('scrollProgress');
+  const updateProgress = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    progressBar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  };
+  updateProgress();
+  window.addEventListener('scroll', updateProgress, { passive:true });
+  window.addEventListener('resize', updateProgress);
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const revealEls = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-mask, .stagger');
+  if (reduceMotion) {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  }
+
+  // animated counters
+  const counters = document.querySelectorAll('[data-count]');
+  const animateCount = (el) => {
+    const target = parseInt(el.getAttribute('data-count'), 10);
+    const isPlain = el.getAttribute('data-format') === 'plain';
+    const duration = 1400;
+    const start = performance.now();
+    const step = (now) => {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased);
+      if (p < 1) requestAnimationFrame(step); else el.textContent = target;
+    };
+    requestAnimationFrame(step);
+  };
+  if (reduceMotion) {
+    counters.forEach(el => el.textContent = el.getAttribute('data-count'));
+  } else {
+    const cIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) { animateCount(entry.target); cIo.unobserve(entry.target); } });
+    }, { threshold: 0.4 });
+    counters.forEach(el => cIo.observe(el));
+  }
+
+  // gentle tilt on value panels
+  const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (!reduceMotion && supportsHover) {
+    document.querySelectorAll('.value-panel').forEach(panel => {
+      panel.addEventListener('mousemove', (e) => {
+        const rect = panel.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        panel.style.transition = 'background .4s ease, box-shadow .4s ease';
+        panel.style.transform = `perspective(900px) rotateX(${(-y*6).toFixed(2)}deg) rotateY(${(x*7).toFixed(2)}deg)`;
+      });
+      panel.addEventListener('mouseleave', () => {
+        panel.style.transition = 'transform .6s var(--ease, ease), background .4s ease, box-shadow .4s ease';
+        panel.style.transform = 'perspective(900px) rotateX(0) rotateY(0)';
+      });
+    });
+  }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
